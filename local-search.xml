@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>测试一下</title>
+    <title>vue模板解析简易实现</title>
     <link href="/2022/03/29/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B/"/>
     <url>/2022/03/29/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B/</url>
     
-    <content type="html"><![CDATA[<h2 id="第一"><a href="#第一" class="headerlink" title="第一"></a>第一</h2><p>内容</p><p>(<code>)     function fun()&#123;          echo &quot;这是一句非常牛逼的代码&quot;;     &#125;     fun(); (</code>)</p><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="第一"><a href="#第一" class="headerlink" title="第一"></a>第一</h2><p>  日常工作中 总是在使用vue进行开发.</p><figure class="highlight kotlin"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs kotlin">function <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">()</span></span>&#123;<br>     echo <span class="hljs-string">&quot;这是一句非常牛逼的代码&quot;</span>;<br>&#125;<br><span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">()</span></span>;<br></code></pre></td></tr></table></figure><hr>]]></content>
     
     
     
