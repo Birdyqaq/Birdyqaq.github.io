@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue  首先创建一个myVue.js文件,在文件中创建一个class类 1234class myVue&amp;#123;    constructor()&amp;#123;          &amp;#125;&amp;#125; 然后新建一个html文件 引入我们创建的myVue.js 然后实例化我们的myVue 1234567&amp;l">
+    <meta name="description" content="初始化  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue  首先创建一个myVue.js文件,在文件中创建一个class类 1234class myVue&amp;#123;    constructor()&amp;#123;          &amp;#125;&amp;#125; 然后新建一个html文件 引入我们创建的myVue.js 然后实例化我们的myVue 1234567&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue模板解析简易实现">
 <meta property="og:url" content="http://example.com/2022/03/29/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B/index.html">
 <meta property="og:site_name" content="wzzz">
-<meta property="og:description" content="第一  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue  首先创建一个myVue.js文件,在文件中创建一个class类 1234class myVue&amp;#123;    constructor()&amp;#123;          &amp;#125;&amp;#125; 然后新建一个html文件 引入我们创建的myVue.js 然后实例化我们的myVue 1234567&amp;l">
+<meta property="og:description" content="初始化  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue  首先创建一个myVue.js文件,在文件中创建一个class类 1234class myVue&amp;#123;    constructor()&amp;#123;          &amp;#125;&amp;#125; 然后新建一个html文件 引入我们创建的myVue.js 然后实例化我们的myVue 1234567&amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-29T04:50:48.000Z">
-<meta property="article:modified_time" content="2022-03-29T10:27:11.863Z">
+<meta property="article:modified_time" content="2022-03-29T12:26:34.533Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      562 字
+      1.5k 字
     </span>
   
 
@@ -205,7 +205,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      13 分钟
     </span>
   
 
@@ -237,16 +237,16 @@
             <h1 style="display: none">vue模板解析简易实现</h1>
             
             <div class="markdown-body">
-              <h2 id="第一"><a href="#第一" class="headerlink" title="第一"></a>第一</h2><p>  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue<br>  首先创建一个myVue.js文件,在文件中创建一个class类</p>
+              <h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>  日常工作中 总是在使用vue进行开发。今天开始就研究一下 如何自己实现一个简易的vue<br>  首先创建一个myVue.js文件,在文件中创建一个class类</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">myVue</span>&#123;<br>    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>)&#123;      <br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>然后新建一个html文件 引入我们创建的myVue.js 然后实例化我们的myVue</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./myVue.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">       <span class="hljs-keyword">new</span> <span class="hljs-title function_">myVue</span>(&#123;</span><br><span class="language-javascript">           <span class="hljs-attr">el</span>:<span class="hljs-string">&#x27;#app&#x27;</span>,</span><br><span class="language-javascript">       &#125;)</span><br><span class="language-javascript">   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
 <p>new我们的myVue传入了一个对象 我们在constructor写一个形参,接收到这个对象之后 我们用document.querySelector(option.el) 获取这个节点<br>此时的myVue.js</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">myVue</span>&#123;<br>    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">option</span>)&#123;<br>      <span class="hljs-variable language_">this</span>.<span class="hljs-property">$el</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(option.<span class="hljs-property">el</span>)<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">$el</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-
-
-
+<h1 id="模板解析赋值"><a href="#模板解析赋值" class="headerlink" title="模板解析赋值"></a>模板解析赋值</h1><p> 在上面一步 我们已经拿到了app这个节点, 接下来就是考虑怎么把 data的数据 赋值到节点的插值语法中</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs xquery">模板内容<br>  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span></span><br><span class="language-xml">        </span><span class="language-xquery">&#123;<span class="hljs-built_in">&#123;name</span>&#125;</span><span class="language-xml">&#125;</span><br><span class="language-xml">        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span></span><span class="language-xquery">&#123;&#123;age&#125;</span><span class="language-xml">&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><span class="language-xml"></span><br><span class="language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./myVue.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br>    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-keyword">new</span> <span class="hljs-title function_">myVue</span>(</span></span><span class="language-xquery">&#123;</span><br><span class="language-xquery">            el:<span class="hljs-string">&#x27;#app&#x27;</span>,</span><br><span class="language-xquery">            data:&#123;</span><br><span class="language-xquery">               <span class="hljs-built_in"> name</span>:<span class="hljs-string">&#x27;吴亦凡&#x27;</span>,</span><br><span class="language-xquery">                age:<span class="hljs-string">&#x27;30&#x27;</span></span><br><span class="language-xquery">            &#125;</span><span class="language-xml"></span><br><span class="language-xml">        &#125;)</span><br><span class="language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><br>myVue内容<br>class myVue&#123;<br>    constructor(<span class="hljs-keyword">option</span>)&#123;<br>      this.<span class="hljs-variable">$el</span> =<span class="hljs-built_in"> document</span>.querySelector(<span class="hljs-keyword">option</span>.el)<br>      this.<span class="hljs-variable">$data</span> = <span class="hljs-keyword">option</span>.data<br>      this.complie(this.<span class="hljs-variable">$el</span>)<br><br>    &#125;<br>    complie( <span class="hljs-type">node</span> )&#123;<br>        <span class="hljs-type">node</span>.childNodes.forEach((<span class="hljs-type">item</span>,index)=&gt;&#123;<br>            // 本文节点<br>            <span class="hljs-keyword">if</span>( <span class="hljs-type">item</span>.nodeType == <span class="hljs-number">3</span>)&#123;<br>                <span class="hljs-keyword">let</span> reg = /\&#123;\&#123;(.*?)\&#125;\&#125;/g;<br>                <span class="hljs-keyword">let</span> <span class="hljs-type">text</span> = <span class="hljs-type">item</span>.textContent;<br><br>                <span class="hljs-type">item</span>.textContent = <span class="hljs-type">text</span><span class="hljs-built_in">.replace</span>(reg,(match,vmKey)=&gt;&#123;<br>                    vmKey = vmKey.trim()<br>                    <span class="hljs-keyword">return</span> this.<span class="hljs-variable">$data</span>[vmKey]<br>                &#125;)<br>            &#125;<br>            // 元素节点<br>            <span class="hljs-keyword">if</span>(<span class="hljs-type">item</span>.nodeType==<span class="hljs-number">1</span>)&#123;<br>                this.complie(<span class="hljs-type">item</span>)<br>            &#125;<br>        &#125;)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>分别对元素节点 和 文本节点解析处理 至此都可以显示啦</p>
 
             </div>
             <hr>
