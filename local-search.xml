@@ -68,5 +68,18 @@
   
   
   
+  <entry>
+    <title>节流</title>
+    <link href="/2021/06/23/%E8%8A%82%E6%B5%81/"/>
+    <url>/2021/06/23/%E8%8A%82%E6%B5%81/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight actionscript"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></div></td><td class="code"><pre><code class="hljs actionscript"> <br> &lt;script&gt;<br><span class="hljs-comment">/*</span><br><span class="hljs-comment">  节流:throttle</span><br><span class="hljs-comment">  定义:当事件持续触发时，保证在一定时间段内，只调用一次事件处理函数</span><br><span class="hljs-comment">  场景: resize scroll等事件</span><br><span class="hljs-comment">*/</span><br><br> window.addEventListener(<span class="hljs-string">&#x27;scroll&#x27;</span>,throttle(<span class="hljs-keyword">function</span><span class="hljs-params">()</span>&#123;<br>       console.log(<span class="hljs-string">&#x27;scroll&#x27;</span>);<br> &#125;,<span class="hljs-number">1000</span>) )<br> <br> <span class="hljs-keyword">function</span> <span class="hljs-title function_">throttle</span><span class="hljs-params">(func,duration=500)</span>&#123;<br>     let prev = <span class="hljs-number">0</span><br>     <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span><span class="hljs-params">(<span class="hljs-rest_arg">...args</span>)</span>&#123;<br>       <span class="hljs-keyword">if</span>(<span class="hljs-keyword">new</span> Date() - prev &lt; duration) <span class="hljs-keyword">return</span><br>       <span class="hljs-keyword">typeof</span> func === <span class="hljs-string">&#x27;function&#x27;</span> &amp;&amp; func.call(<span class="hljs-keyword">this</span>,...args)<br>       prev = <span class="hljs-keyword">new</span> Date()<br>     &#125;<br> &#125;<br> &lt;/script&gt;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
   
 </search>
